@@ -1,0 +1,41 @@
+.createSupplierForm {
+    border: solid;
+    /* height: 900px; */
+    width: 600px;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+
+.formTitle {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 28px;
+    color: black;
+}
+
+
+.formLabel {
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.formInput {}
+
+.borderSection {
+    border-bottom: solid;
+    border-color: lightgray;
+}
+
+.formInputGroup {
+    margin: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.sectionTitle{
+    font-size: 24px;
+    font-weight: 400;
+}
