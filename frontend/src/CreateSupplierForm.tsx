@@ -1,13 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
-import { FormControl, InputLabel, TextField, FormHelperText } from '@mui/material';
+import { Button, TextField} from '@mui/material';
 
 import './CreateSupplierForm.css';
 
+
+const handleFormSubmit = (e: any) => {
+  console.log("'here");
+  debugger;
+
+}
+
 function CreateSupplierForm() {
+
   return (
     <div className="createSupplierForm">
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="borderSection">
           <div className="formTitle">Create Supplier</div>
         </div>
@@ -40,7 +48,7 @@ function CreateSupplierForm() {
               <div className="formLabel">City</div>
                 <TextField
                   id="supplierCity"
-                  placeholder="Redwood City"
+                  placeholder="370 Convention Way #102"
                   sx={{ width: '100%' }}
                 />
             </div>
@@ -56,7 +64,7 @@ function CreateSupplierForm() {
               <div className="formLabel">Country</div>
                 <TextField
                   id="supplierCountry"
-                  placeholder="USA"
+                  placeholder="United States"
                   sx={{ width: '100%' }}
                 />
             </div>
@@ -67,6 +75,10 @@ function CreateSupplierForm() {
                   placeholder="94063"
                   sx={{ width: '100%' }}
                 />
+            </div>
+
+            <div className="buttonWrapper">
+                <Button className="button" type="submit" variant="contained">Submit</Button>
             </div>
           </div>
         </div>
