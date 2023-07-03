@@ -76,6 +76,7 @@ function CreateSupplierForm() {
             </div>
             <div className="formInput">
               <div className="formLabel">Logo</div>
+              <div className="submitGroup">
                 <Button id='upload' variant="contained" component="label">
                   Upload Image
                   <input
@@ -84,6 +85,8 @@ function CreateSupplierForm() {
                     onChange={handleLogo}
                   />
                 </Button>
+                <div className="fileName">{logo?.name}</div>
+              </div>
             </div>
           </div>
         </div>
