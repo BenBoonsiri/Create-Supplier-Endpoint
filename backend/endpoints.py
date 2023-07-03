@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request, Response
 from werkzeug.utils import secure_filename
-from .models import Supplier, Address, Img, db
+from models import Supplier, Address, Img, db
 
 main = Blueprint('main', __name__)
 

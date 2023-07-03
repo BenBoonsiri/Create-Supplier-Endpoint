@@ -1,5 +1,6 @@
 from flask import Flask
-from .models import Address, Img, Supplier, db
+#from backend import models
+from models import db
 
 
 def create_app():
@@ -12,7 +13,7 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-    from .endpoints import main
+    from endpoints import main
     app.register_blueprint(main)
 
     return app

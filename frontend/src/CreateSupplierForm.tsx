@@ -30,6 +30,7 @@ function CreateSupplierForm() {
 
   return (
     <div className="createSupplierForm">
+
       <form onSubmit={async() => {
         const formData = new FormData();
         formData.append("supplier_name", supplierName)
@@ -50,12 +51,12 @@ function CreateSupplierForm() {
         })
 
         if (response.ok){
-          console.log('response worked')
+          console.log('response success')
         } else {
           console.log('error')
         }
-
       }}>
+
         <div className="borderSection">
           <div className="formTitle">Create Supplier</div>
         </div>
