@@ -16,8 +16,8 @@ class Address(db.Model):
 class Img(db.Model):
     __tablename__ = "images"
     image_id = db.Column(Integer, primary_key = True)
-    img = db.Column(Text, unique=True, nullable = False)
-    name = db.Column(Text, nullable=False)
+    img = db.Column(Text, nullable = False)
+    name = db.Column(Text, nullable = False)
     mimetype = db.Column(Text, nullable=False)
 
 class Supplier(db.Model):
