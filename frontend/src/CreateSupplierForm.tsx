@@ -45,7 +45,7 @@ function CreateSupplierForm() {
           formData.append("logo", logo, logo.name)
         }
 
-        const response = await fetch('/add_supplier', {
+        const response = await fetch('http://127.0.0.1:5000/add_supplier', {
           method: 'POST',
           body: formData
         })
